@@ -1,4 +1,4 @@
-import { ReleaseType, Observer } from '../../../design/Observer'
+import { ReleaseType, Observer } from '../../design/Observer'
 
 export class SalesOffice implements ReleaseType {
   public name: string

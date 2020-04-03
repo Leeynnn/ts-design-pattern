@@ -1,5 +1,5 @@
 import { SalesOffice } from './SalesOffice'
-import { Observer } from '../../../design/Observer'
+import { Observer } from '../../design/Observer'
 import { Client } from './Client'
 
 const apartment = new SalesOffice('公寓', 'apartment')

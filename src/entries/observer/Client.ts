@@ -1,4 +1,5 @@
-import { SubscribeType, ListType, isFunction } from '../../../design/Observer'
+import { SubscribeType, ListType } from '../../design/Observer'
+import { isFunction } from '../../util/util'
 
 export class Client implements SubscribeType {
   public subscriptionList: ListType = []

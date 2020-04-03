@@ -1,4 +1,4 @@
-import { Strategy } from '../../../design/Strategy'
+import { Strategy } from '../../design/Strategy'
 const strategy = new Strategy()
 strategy
   .addRule({

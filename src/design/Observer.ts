@@ -1,3 +1,4 @@
+import { isFunction } from '../util/util'
 // 发布订阅模式思想实现
 
 /*
@@ -12,10 +13,6 @@ interface ObserverType {
   release(release: ReleaseType): Observer // 发布
   subscription(subscribe: SubscribeType): Observer // 订阅
   unsubscribe(event: string, callback: any): void // 取消订阅
-}
-
-export function isFunction(val: any): boolean {
-  return toString.call(val) === '[object Function]'
 }
 
 export interface ListType {

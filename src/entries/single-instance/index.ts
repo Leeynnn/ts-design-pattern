@@ -1,4 +1,4 @@
-import { SingleInstance } from '../../../design/SingleInstance'
+import { SingleInstance } from '../../design/SingleInstance'
 
 const instance1 = SingleInstance.getInstance('Tom')
 const instance2 = SingleInstance.getInstance('Bob')
