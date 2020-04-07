@@ -10,8 +10,8 @@ import { isFunction } from '../util/util'
 */
 
 interface ObserverType {
-  release(release: ReleaseType): Observer // 发布
-  subscription(subscribe: SubscribeType): Observer // 订阅
+  release(release: ReleaseType): ObserverType // 发布
+  subscription(subscribe: SubscribeType): ObserverType // 订阅
   unsubscribe(event: string, callback: any): void // 取消订阅
 }
 

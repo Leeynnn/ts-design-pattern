@@ -9,7 +9,7 @@
 */
 
 interface CommanderType {
-  setCommand(command: string, sponsor: SponsorType): Commander
+  setCommand(command: string, sponsor: SponsorType): CommanderType
   getCommand(command: string): SponsorType | void
 }
 
@@ -37,7 +37,7 @@ export class Commander implements CommanderType {
     if (!this.commands[command]) {
       this.commands[command] = []
     }
-    const index = this.commands[command].findIndex(item => item === sponsor)
+    const index = this.commands[command].findIndex((item) => item === sponsor)
     if (index !== -1) {
       this.commands[command].splice(index, 1)
       this.commands[command].unshift(sponsor)

@@ -1,6 +1,6 @@
 import { SalesOffice } from './SalesOffice'
-import { Observer } from '../../design/Observer'
 import { Client } from './Client'
+import { Observer } from '../../design/Observer'
 
 const apartment = new SalesOffice('公寓', 'apartment')
 const hotel = new SalesOffice('酒店', 'hotel')

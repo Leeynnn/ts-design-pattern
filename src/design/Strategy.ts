@@ -20,9 +20,9 @@ interface StrategyType {
 }
 
 interface StrategyClassType {
-  addRule(strategy: StrategyType): Strategy
-  add(strategies: string | string[], environment: any): Strategy
-  start(): Strategy
+  addRule(strategy: StrategyType): StrategyClassType
+  add(strategies: string | string[], environment: any): StrategyClassType
+  start(): StrategyClassType
 }
 
 interface CacheType {
