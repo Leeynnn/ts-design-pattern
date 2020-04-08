@@ -1,4 +1,4 @@
-import { PlayerDirectorType } from './index'
+import { PlayerDirectorType } from '../../design/Intermediary'
 export type Team = 'blue' | 'red'
 export type Alive = 'alive' | 'died'
 
